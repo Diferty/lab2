@@ -103,7 +103,7 @@ public:
         ++length;
     }
 
-    void AddAt(T item, int index) 
+    void InsertAt(T item, int index) 
     {
         if (index < 0 || index > length) throw IndexOutOfRange("InsertAt");
         if (index == 0) Prepend(item);
@@ -119,7 +119,7 @@ public:
         }
     }
 
-    LinkedList<T> Union(const LinkedList<T>& other) const 
+    LinkedList<T> Concat(const LinkedList<T>& other) const 
     {
         LinkedList<T> result = *this;
         Elem* cur = other.head;
