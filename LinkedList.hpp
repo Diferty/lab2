@@ -8,8 +8,7 @@ private:
         T value;
         Elem* prev;
         Elem* next;
-        Elem(const T& val, Elem* p = nullptr, Elem* n = nullptr)
-            : value(val), prev(p), next(n) {}
+        Elem(const T& val, Elem* p = nullptr, Elem* n = nullptr) : value(val), prev(p), next(n) {}
     };
     Elem* head;
     Elem* tail;
